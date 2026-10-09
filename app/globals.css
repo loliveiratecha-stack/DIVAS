@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Bodoni Moda', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0b0709;
+    color: #ffb6c1;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-couture {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Panthera onça luxury background layer */
+.bg-panthera-onca {
+  background-image: 
+    radial-gradient(circle at center, rgba(19, 0, 24, 0.55) 0%, rgba(10, 2, 12, 0.88) 100%),
+    url('/images/panthera_onca_pattern_1791571768462.jpg');
+  background-size: cover, 700px auto;
+  background-attachment: fixed;
+  background-repeat: no-repeat, repeat;
+}
+
+/* Fubanga pink text glow and roxo accents */
+.text-fubanga-pink {
+  color: #ff2d95;
+}
+
+.text-fubanga-glow {
+  text-shadow: 0 0 16px rgba(255, 45, 149, 0.45);
+}
+
+.border-fubanga-roxo {
+  border-color: #6a0dad;
+}
+
+.bg-fubanga-roxo {
+  background-color: #2e003e;
+}
+
+/* Custom scrollbar and glassmorphism helpers */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #1a0026;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff1493;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9d00ff;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 0.35; transform: scale(1); }
+  50% { opacity: 0.55; transform: scale(1.08); }
+}
+
+.animate-glow-pulse {
+  animation: pulse-subtle 6s ease-in-out infinite;
+}

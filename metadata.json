@@ -1,0 +1,6 @@
+{
+  "name": "Divas dress well.",
+  "description": "Plataforma de alta-costura e pesquisa visual para combinações perfeitas de roupas, harmonia de cores e texturas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
